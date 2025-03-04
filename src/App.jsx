@@ -4,7 +4,7 @@ import './App.css'
 import Home from './components/Home/Home'
 import Navbar from './components/Navbar/Navbar'
 import Contact from './components/Contact/Contact'
-import Project from './components/projects/Project'
+import Project from './components/Projects/Project'
 
 
 function App() {
