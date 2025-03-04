@@ -9,7 +9,7 @@
     width: 99vw;
     height: max-content;
     box-sizing: border-box;
-    background-color: red;
+    /* background-color: red; */
   
 }
 .project-container{
@@ -21,24 +21,42 @@
     gap: 3rem;
     flex-direction: column;
     box-sizing: border-box;
+    /* background-color: palevioletred; */
 }
 
 
 .project{
+    margin-top: 10px;
+    border-radius: 1rem;
+    padding: 10px 8px;
     box-sizing: border-box;
-    width: 90%;
+    width: 96%;
     display: flex;
     gap: 5rem;
     align-items: center;
     overflow: hidden;
-    background-color: aqua;
+    /* background-color: aqua; */
     box-sizing: border-box;
+    box-shadow: 0px 0px 14px black;
     transition: all 0.3s ease-out;
 }
 
+.project > ul{
+    margin-top: 10px;
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style-position: inside;
+}
+
+.project > ul > li:nth-child(1){
+    list-style: none;
+}
+
 .pone-media, .ptwo-media, .pthree-media {
-    width: 45%;
-    height: 320px; /* Set a fixed height */
+    width: 48%;
+    height: 365px; /* Set a fixed height */
     border-radius: 1rem;
     transition: all 0.3s ease-out;
     position: relative; /* Allows absolute positioning of children */

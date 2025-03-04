@@ -36,11 +36,16 @@ function Project() {
                             className="pone-media">
                             {hover1 ? <video src={video1} autoPlay loop muted></video> : <img src={img1} alt="" />}
                         </div>
-                        <ul>
+                        <ul list="circle">
                             <li><h3>Crypto Price Tracker: Real-Time Cryptocurrency Insights</h3></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Built with React.js for a dynamic and interactive UI.</li>
+                            <li>Styled using Tailwind CSS for a modern and responsive design.</li>
+                            <li>Implemented state management with Zustand for efficient data handling.</li>
+                            <li>Fetched real-time data using Axios and TanStack React Query.</li>
+                            <li>Displayed interactive charts using Chart.js and react-chartjs-2.</li>
+                            <li>Handled errors gracefully with react-error-boundary.</li>
+                            <li>Used react-content-loader for skeleton loading animations.</li>
+                            <li>Enabled client-side routing with React Router DOM.</li>
                         </ul>
 
                     </div>
@@ -48,27 +53,32 @@ function Project() {
                     <div className="project ptwo">
 
                         <div onMouseEnter={() => setHover2(true)} onMouseLeave={() => setHover2(false)}
-                         className="ptwo-media">
+                            className="ptwo-media">
                             {hover2 ? <video src={video2} autoPlay loop muted></video> : <img src={img2} alt="" />}
                         </div>
                         <ul>
                             <li><h3>Pokedex Explorer: Pokémon Data & Stats Viewer</h3></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Built with React.js 19 for a fast and interactive user experience.</li>
+                            <li>Used React Router DOM for seamless client-side navigation between pages.</li>
+                            <li>Fetched Pokémon data from an API using Axios for efficient HTTP requests.</li>
+                            <li>Rendered dynamic content with React DOM to provide a smooth UI experience.</li>
                         </ul>
                     </div>
 
                     <div className="project pthree">
                         <div onMouseEnter={() => setHover3(true)} onMouseLeave={() => setHover3(false)}
-                         className="pthree-media">
+                            className="pthree-media">
                             {hover3 ? <video src={video3} autoPlay loop muted></video> : <img src={img3} alt="" />}
                         </div>
                         <ul>
                             <li><h3>Todo app:write,store,use and delete</h3></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Built with React.js for a dynamic and interactive UI.</li>
+                            <li>Used React Hooks (`useState`, `useEffect`) for state and lifecycle management.</li>
+                            <li>Implemented local storage to persist tasks even after page refresh.</li>
+                            <li>Generated unique task IDs using `uuid` for efficient task tracking.</li>
+                            <li>Enabled task completion toggling with a checkbox system.</li>
+                            <li>Added edit and delete functionality for better task management.</li>
+                            <li>Styled with Tailwind CSS for a clean and responsive design.</li>
                         </ul>
                     </div>
                 </div>

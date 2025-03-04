@@ -21,3 +21,8 @@
     font-size: 1.8rem;
     font-weight: 600;
 }
+
+.contact > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
