@@ -26,3 +26,19 @@
     text-decoration: none;
     color: white;
 }
+
+.contact > ul > li > a:hover{
+    color: #005ac3;
+}
+
+
+
+@media (max-width: 768px) {
+    .contact > ul{
+        display: flex;
+        gap: 2.5rem;
+        list-style: none;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+}

@@ -7,7 +7,7 @@
 }
 
 .nav > h1, .nav > h1 > a{
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     text-decoration: none;
     color: white;
 }
@@ -27,4 +27,13 @@
 
 .nav > ul > li > a:hover{
     Color: #005ac3;
+}
+
+@media (max-width: 768px) {
+    .nav > ul{
+        display: flex;
+        list-style:none;
+        gap: 5rem;
+        font-size: 0.6rem;
+    }
 }

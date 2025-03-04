@@ -126,8 +126,23 @@
     border-radius: 10px;
     padding: 10px;
     transition: transform 0.3s ease-in-out;
-    
+    animation: waveMotion 1.5s ease-in-out infinite ;
+    animation-delay: 8s;
 }
+
+@keyframes waveMotion {
+    0% { transform: translateY(-2px); }
+    50% { transform: translateY(2px); }
+    100% { transform: translateY(-2px); }
+}
+
+/* Adding delay to create a staggered wave effect */
+.technologies > ul > li:nth-child(1) { animation-delay: 0s; }
+.technologies > ul > li:nth-child(2) { animation-delay: 0.2s; }
+.technologies > ul > li:nth-child(3) { animation-delay: 0.4s; }
+.technologies > ul > li:nth-child(4) { animation-delay: 0.6s; }
+.technologies > ul > li:nth-child(5) { animation-delay: 0.8s; }
+.technologies > ul > li:nth-child(6) { animation-delay: 1s; }
 
 
 .technologies > ul > li:hover {
@@ -138,4 +153,77 @@
     width: 100%;
     height: auto;
     
+}
+
+@media (max-width: 1024px) {
+    .home {
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+        height: 40vh;
+    }
+
+    .image-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about {
+        width: 65%;
+        font-size: 0.9rem;
+        text-align: start;
+    }
+
+    .technologies ul {
+        gap: 1.5rem;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .technologies li {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+        height: 40vh;
+        margin-top: 0.5rem;
+    }
+
+    .image-container {
+        width: 180px;
+        height: 180px;
+    }
+
+    .about {
+        width: 98%;
+        font-size: 0.6rem;
+    }
+
+    .technologies > ul {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 0 1rem;
+    }
+
+    .technologies > ul > li {
+        width: 46px;
+        height: 52px;
+    }
+
+    .resume-btn{
+        padding: 10px;
+        font-size: 0.6rem;
+    }
 }
