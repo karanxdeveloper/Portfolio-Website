@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router'
 import './App.css'
 import Home from './components/Home/Home'
 import Navbar from './components/Navbar/Navbar'
-import Contact from './components/contact/Contact'
+import Contact from './components/Contact/Contact'
 import Project from './components/projects/Project'
 
 
