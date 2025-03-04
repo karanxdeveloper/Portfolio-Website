@@ -9,6 +9,7 @@
     width: 99vw;
     height: max-content;
     box-sizing: border-box;
+    background-color: red;
   
 }
 .project-container{
@@ -30,22 +31,27 @@
     gap: 5rem;
     align-items: center;
     overflow: hidden;
+    background-color: aqua;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
 }
 
-.pone-media,.ptwo-media,.pthree-media{
-    width: 40%;
-    background-color: red;
-    border-radius: 2rem;
-   
+.pone-media, .ptwo-media, .pthree-media {
+    width: 45%;
+    height: 320px; /* Set a fixed height */
+    border-radius: 1rem;
+    transition: all 0.3s ease-out;
+    position: relative; /* Allows absolute positioning of children */
+    overflow: hidden; /* Ensures smooth transition */
 }
 
-.pone-media img,.ptwo-media img,.pthree-media img{
-    height: 100%;
-    width: 100%;
-}
-
-.pone-media video,.ptwo-media video,.pthree-media video{
+.pone-media img, .ptwo-media img, .pthree-media img,
+.pone-media video, .ptwo-media video, .pthree-media video {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.4s ease-in-out; /* Smooth transition */
 }
