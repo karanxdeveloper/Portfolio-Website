@@ -1,0 +1,23 @@
+.contact{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    font-family: "Montserrat";
+}
+
+.contact > h1{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.contact > ul{
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
