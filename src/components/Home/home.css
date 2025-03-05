@@ -70,7 +70,7 @@
     margin-top: 1.8rem;
     background-color:#005ac3 ;
     transition: all 0.5s ease-out;
-    animation: buttonblur 2s ease-out;;
+    animation: buttonblur 2s ease-out;
     color: white;
 }
 
@@ -209,18 +209,20 @@
         align-items: center;
         text-align: center;
         gap: 1.5rem;
-        height: 40vh;
-        margin-top: 0.5rem;
+        height: 60vh;
+        margin-top: 2.5rem;
     }
 
     .image-container {
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
+        background-color: #004797;
     }
 
     .about {
         width: 98%;
         font-size: 0.6rem;
+        height: 40%;
     }
 
     .technologies > ul {

@@ -11,10 +11,6 @@ import { useState } from "react"
 function Project() {
 
 
-    const [hover1, setHover1] = useState(false)
-    const [hover2, setHover2] = useState(false)
-    const [hover3, setHover3] = useState(false)
-
 
     let img1 = pimg1;
     let img2 = pimg2;
@@ -32,18 +28,14 @@ function Project() {
 
                     <div className="project pone">
 
-                        <div onMouseEnter={() => setHover1(true)} onMouseLeave={() => setHover1(false)}
-                            className="pone-media">
-                            {hover1 ? <video src={video1} autoPlay loop muted></video> : <img src={img1} alt="" />}
+                        <div className="pone-media">
+                            <img src={img1} alt="" />
                         </div>
                         <ul list="circle">
-                            <li><h3>Crypto Price Tracker: Real-Time Cryptocurrency Insights</h3></li>
+                            <li><a target="_blank"  href="https://crypto-tracker-sable-nine.vercel.app"><h3>Crypto Price Tracker: Real-Time Cryptocurrency Insights</h3></a></li>
                             <li>Built with React.js for a dynamic and interactive UI.</li>
                             <li>Styled using Tailwind CSS for a modern and responsive design.</li>
-                            <li>Implemented state management with Zustand for efficient data handling.</li>
                             <li>Fetched real-time data using Axios and TanStack React Query.</li>
-                            <li>Displayed interactive charts using Chart.js and react-chartjs-2.</li>
-                            <li>Handled errors gracefully with react-error-boundary.</li>
                             <li>Used react-content-loader for skeleton loading animations.</li>
                             <li>Enabled client-side routing with React Router DOM.</li>
                         </ul>
@@ -52,12 +44,12 @@ function Project() {
 
                     <div className="project ptwo">
 
-                        <div onMouseEnter={() => setHover2(true)} onMouseLeave={() => setHover2(false)}
+                        <div 
                             className="ptwo-media">
-                            {hover2 ? <video src={video2} autoPlay loop muted></video> : <img src={img2} alt="" />}
+                             <img src={img2} alt="" />
                         </div>
                         <ul>
-                            <li><h3>Pokedex Explorer: Pokémon Data & Stats Viewer</h3></li>
+                            <li><a target="_blank"  href="https://pokedex-website-blond.vercel.app"><h3>Pokedex Explorer: Pokémon Data & Stats Viewer</h3></a></li>
                             <li>Built with React.js 19 for a fast and interactive user experience.</li>
                             <li>Used React Router DOM for seamless client-side navigation between pages.</li>
                             <li>Fetched Pokémon data from an API using Axios for efficient HTTP requests.</li>
@@ -66,19 +58,16 @@ function Project() {
                     </div>
 
                     <div className="project pthree">
-                        <div onMouseEnter={() => setHover3(true)} onMouseLeave={() => setHover3(false)}
+                        <div 
                             className="pthree-media">
-                            {hover3 ? <video src={video3} autoPlay loop muted></video> : <img src={img3} alt="" />}
+                            <img src={img3} alt="" />
                         </div>
                         <ul>
-                            <li><h3>Todo app:write,store,use and delete</h3></li>
+                            <li><a target="_blank" href="https://react-todo-app-pearl-zeta.vercel.app"><h3>Todo app:write,store,use and delete</h3></a></li>
                             <li>Built with React.js for a dynamic and interactive UI.</li>
-                            <li>Used React Hooks (`useState`, `useEffect`) for state and lifecycle management.</li>
                             <li>Implemented local storage to persist tasks even after page refresh.</li>
-                            <li>Generated unique task IDs using `uuid` for efficient task tracking.</li>
                             <li>Enabled task completion toggling with a checkbox system.</li>
                             <li>Added edit and delete functionality for better task management.</li>
-                            <li>Styled with Tailwind CSS for a clean and responsive design.</li>
                         </ul>
                     </div>
                 </div>

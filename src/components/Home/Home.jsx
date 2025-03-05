@@ -13,7 +13,7 @@ function Home() {
 
     return (
         <>
-            <div className="home">
+            <div className="home ">
                 <div className="image-container">
                     <img src={imageUrl} alt="" />
                 </div>
