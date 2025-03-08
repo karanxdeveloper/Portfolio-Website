@@ -6,7 +6,6 @@
     justify-content: center;
     align-items: center;
     font-family: "Montserrat";
-    color: white;
 }
 
 .image-container{
@@ -18,6 +17,7 @@
     box-shadow: 0px 0px 16px rgb(0, 0, 0);
     animation: slideIn 2s ease-out;
     z-index: 5;
+    
 }
 
 @keyframes slideIn {
@@ -34,14 +34,17 @@
 .image-container img{
     width: 100%;
     height: 100%;
+   
 }
 
+
+
 .about{
-    width: 43%;
+    width: 45%;
     letter-spacing: 1px;
     font-size: 1.1rem;
     animation: showtext 2s ease-out;
-    padding: 5px 10px;
+    padding: 5px 15px;
 }
 
 .about > p{
@@ -72,7 +75,19 @@
     transition: all 0.5s ease-out;
     animation: buttonblur 2s ease-out;
     color: white;
+    animation: glow 2s ease-in-out infinite;
 }
+
+@keyframes glow {
+    0%, 100% {
+      opacity: 1;
+      box-shadow: 0 0 10px #005ac3 ;
+    }
+    50% {
+      opacity: 1;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0);
+    }
+  }
 
 .resume-btn:hover{
     background-color: #004797;
@@ -113,7 +128,7 @@
     gap: 2rem;
     list-style: none;
     flex-wrap: wrap;
-    padding: 0;
+    padding: 4px;
     margin: 0;
     overflow: hidden;
     animation: techlogo 2s ease-out;

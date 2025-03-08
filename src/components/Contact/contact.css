@@ -11,10 +11,23 @@
 
 .contact > h1{
     font-size: 2.5rem;
-    color: white;
+    animation: slide 2.5s;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .contact > ul{
+    justify-content: center;
+    width: 100%;
     display: flex;
     gap: 2.5rem;
     list-style: none;
@@ -24,15 +37,14 @@
 
 .contact > ul > li > a{
     text-decoration: none;
-    color: white;
     transition: all 0.5s ease-out;
+    
 }
+
 
 .contact > ul > li > a:hover{
     color: #005ac3;
 }
-
-
 
 @media (max-width: 768px) {
     .contact > ul{

@@ -63,7 +63,19 @@
 }
 
 .pone-media, .ptwo-media, .pthree-media {
-    width: 40%;; /* Set a fixed height */
+    width: 40%; /* Set a fixed height */
+    animation: slideIn 2s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .pone-media img, .ptwo-media img, .pthree-media img {
@@ -86,7 +98,10 @@
         width: 80%;
         height: 300px;
         overflow-y: hidden;
+        
     }
+
+    
 
     .project > ul {
         width: 90%;
