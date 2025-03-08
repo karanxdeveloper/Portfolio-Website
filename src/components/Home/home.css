@@ -12,8 +12,7 @@
     width: 28%;
     height: 55vh;
     overflow: hidden;
-    border-top-left-radius: 5%;
-    border-bottom-right-radius: 5%;
+    border-radius: 50%;
     box-shadow: 0px 0px 16px rgb(0, 0, 0);
     animation: slideIn 2s ease-out;
     z-index: 5;
@@ -40,11 +39,11 @@
 
 
 .about{
-    width: 45%;
+    width: 43%;
     letter-spacing: 1px;
     font-size: 1.1rem;
     animation: showtext 2s ease-out;
-    padding: 5px 15px;
+    padding: 5px 10px;
 }
 
 .about > p{
@@ -65,6 +64,7 @@
 }
 
 .resume-btn{
+    background-color: rebeccapurple;
     padding: 15px;
     border: none;
     border-top-left-radius: 1.5rem;
@@ -225,7 +225,7 @@
         text-align: center;
         gap: 1.5rem;
         height: 60vh;
-        margin-top: 2.5rem;
+        margin-top: 2rem;
     }
 
     .image-container {
@@ -237,14 +237,14 @@
     .about {
         width: 98%;
         font-size: 0.6rem;
-        height: 40%;
+        overflow: hidden;
     }
 
     .technologies > ul {
         flex-wrap: nowrap;
         overflow-x: auto;
         justify-content: flex-start;
-        padding: 0 1rem;
+        padding:0px 1rem;
     }
 
     .technologies > ul > li {
@@ -253,7 +253,7 @@
     }
 
     .resume-btn{
-        padding: 10px;
-        font-size: 0.6rem;
+        padding: 8px;
+        font-size: 0.5rem;
     }
 }

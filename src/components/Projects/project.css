@@ -64,7 +64,7 @@
 
 .pone-media, .ptwo-media, .pthree-media {
     width: 40%; /* Set a fixed height */
-    animation: slideIn 2s ease-out;
+    animation: slideIn 1.4s ease-out;
 }
 
 @keyframes slideIn {
