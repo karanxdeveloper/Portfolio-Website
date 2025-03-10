@@ -1,4 +1,3 @@
-
 import { Route, Routes } from 'react-router'
 import './App.css'
 import Home from './components/Home/Home'
@@ -14,9 +13,12 @@ function App() {
 
  
   useEffect(() => {
+    document.body.style.backgroundImage = mode
+      ? "linear-gradient(to bottom right, #1a202c, #1a1a1a, #000000)"
+      : "none";
     document.body.style.backgroundColor = mode ? "#1a202c" : "#ffffff";
     document.body.style.color = mode ? "white" : "#000000";
-  }, [mode]);
+  })
 
   return (
     <>
