@@ -1,6 +1,6 @@
 import "./home.css"
 import profileImage from "../../profileImage/20250304_105152_0000.jpg"
-import resume from "../../resume/resume_karan_kumar_singh.pdf"
+import resume from "../../resume/resume_karan_kumar_singh (1).pdf"
 import js from "../../technologies/js.svg"
 import react from "../../technologies/reactjs.svg"
 import tailwind from "../../technologies/tailwind.svg"

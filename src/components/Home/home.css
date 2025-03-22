@@ -32,8 +32,7 @@
 
 .image-container img{
     width: 100%;
-    height: 100%;
-   
+    height: 100%;  
 }
 
 
@@ -240,11 +239,13 @@
         overflow: hidden;
     }
 
+
     .technologies > ul {
         flex-wrap: nowrap;
         overflow-x: auto;
         justify-content: flex-start;
-        padding:0px 1rem;
+        padding:4px 1rem;
+        gap: 1.2rem;
     }
 
     .technologies > ul > li {
@@ -255,5 +256,16 @@
     .resume-btn{
         padding: 8px;
         font-size: 0.5rem;
+    }
+
+    @keyframes techlogo {
+        from {
+            gap: 5rem;
+            opacity: 0;
+        }
+        to {
+            gap: 1rem;
+            opacity: 1;
+        }
     }
 }
