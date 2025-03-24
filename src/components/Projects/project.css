@@ -62,7 +62,7 @@
     transform: translatey(-4px);
 }
 
-.pone-media, .ptwo-media, .pthree-media {
+.pone-media, .ptwo-media, .pthree-media,.pfour-media {
     width: 40%; /* Set a fixed height */
     animation: slideIn 1.4s ease-out;
 }
@@ -78,7 +78,7 @@
     }
 }
 
-.pone-media img, .ptwo-media img, .pthree-media img {
+.pone-media img, .ptwo-media img, .pthree-media img, .pfour-media img {
     height: 100%;
     width: 100%;
     border-radius: 16px;
@@ -94,7 +94,7 @@
         width: 100%;
     }
 
-    .pone-media, .ptwo-media, .pthree-media {
+    .pone-media, .ptwo-media, .pthree-media,.pfour-media {
         width: 80%;
         height: 300px;
         overflow-y: hidden;
@@ -126,7 +126,7 @@
         width: 100%;
     }
 
-    .pone-media, .ptwo-media, .pthree-media {
+    .pone-media, .ptwo-media, .pthree-media,.pfour-media {
         width: 100%;
         height: 225px;
         overflow: hidden;
