@@ -6,7 +6,7 @@
 
 body {
   font-family: "Montserrat";
-  background-color: #1a202c;
+  background-color: linear-gradient(to bottom right, #1a202c, #1a1a1a, #000000);
   /* color: white;  Default light mode text color */
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
